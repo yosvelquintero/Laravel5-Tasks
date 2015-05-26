@@ -26,8 +26,8 @@
                 </div>
                 <div id="navbar" class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li class="{{ Request::is('/') ? 'active' : '' }}"><a href="{{ route('home') }}">Home</a></li>
-                        <li class="{{ Request::is('tasks*') ? 'active' : '' }}"><a href="{{ route('tasks.index') }}">Tasks</a></li>
+                        <li class="{{ set_active('/') }}"><a href="{{ route('home') }}">Home</a></li>
+                        <li class="{{ set_active('tasks*') }}"><a href="{{ route('tasks.index') }}">Tasks</a></li>
                     </ul>
                 </div>
             </div>
