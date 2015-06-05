@@ -12,22 +12,26 @@
 
             {!! Form::model($task, [
                 'method' => 'PATCH',
-                'route' => ['tasks.update', $task->id]
+                'route' => ['tasks.update', $task->id],
+                'id' => 'editForm'
             ]) !!}
+
+
 
             <div class="form-group">
                 {!! Form::label('title', 'Title:', ['class' => 'control-label']) !!}
-                {!! Form::text('title', null, ['class' => 'form-control']) !!}
+                {!! Form::text('title', null, ['class' => 'form-control', 'id' => 'title']) !!}
             </div>
 
             <div class="form-group">
                 {!! Form::label('description', 'Description:', ['class' => 'control-label']) !!}
-                {!! Form::textarea('description', null, ['class' => 'form-control']) !!}
+                {!! Form::textarea('description', null, ['class' => 'form-control', 'id' => 'description']) !!}
             </div>
 
             {!! Form::submit('Update Task', ['class' => 'btn btn-primary']) !!}
 
             {!! Form::close() !!}
         </div>
+        {{--  @include('vendor.lrgt.ajax_script', ['form' => '#editForm', 'request'=>'App/Http/Requests/TaskRequest','on_start'=>false]) --}}
     </div>
 @stop

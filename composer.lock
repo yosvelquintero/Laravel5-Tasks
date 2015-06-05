@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3fd34b81abd2692be383fa88754c6593",
+    "hash": "c0d9516c1555bb3586987dcaebe56e32",
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
@@ -716,6 +716,51 @@
                 "storage"
             ],
             "time": "2015-03-29 14:01:43"
+        },
+        {
+            "name": "lrgt/laravel-form-ajax-validation",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guicho0601/laravel-form-ajax-validation.git",
+                "reference": "c1cb8f13974424930095ceccdf8a98ff6b882b97"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guicho0601/laravel-form-ajax-validation/zipball/c1cb8f13974424930095ceccdf8a98ff6b882b97",
+                "reference": "c1cb8f13974424930095ceccdf8a98ff6b882b97",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.0.*",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Lrgt\\LaravelFormAjaxValidation": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luis Ramos",
+                    "email": "guicholarg@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Make ajax validation with Laravel Requests for forms with bootstrap",
+            "homepage": "https://github.com/guicho0601/laravel-form-ajax-validation",
+            "keywords": [
+                "ajax",
+                "form",
+                "laravel",
+                "validation"
+            ],
+            "time": "2015-06-04 03:51:34"
         },
         {
             "name": "maximebf/debugbar",
@@ -2980,7 +3025,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "lrgt/laravel-form-ajax-validation": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

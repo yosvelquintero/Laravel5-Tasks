@@ -150,6 +150,8 @@ return [
 		 */
 		'Illuminate\Html\HtmlServiceProvider',
 		'Barryvdh\Debugbar\ServiceProvider',
+	    'Lrgt\LaravelFormAjaxValidation\LaravelFormAjaxValidationServiceProvider',
+
 
 	],
 
